@@ -1,0 +1,22 @@
+/* Micro-Landlord Royal Indigo Palette (Hungarian market; Exclusive) */
+
+:root,
+.theme-dark {
+  --color-primary: #4f46e5;         /* indigo-600 */
+  --color-primary-contrast: #ffffff;
+  --color-accent:  #22d3ee;         /* cyan-400 */
+  --color-bg:      #0b1020;         /* deep charcoal */
+  --color-surface: #111736;         /* elevated cards */
+  --color-text:    #e5e7eb;         /* slate-200 */
+  --color-muted:   #94a3b8;         /* slate-400 */
+}
+
+.theme-light {
+  --color-primary: #4f46e5;
+  --color-primary-contrast: #ffffff;
+  --color-accent:  #06b6d4;         /* cyan-500, lighter accent */
+  --color-bg:      #f4f6fb;         /* very light */
+  --color-surface: #f8fafc;         /* near-white surface */
+  --color-text:    #1e293b;         /* slate-800 */
+  --color-muted:   #64748b;         /* slate-500 */
+}

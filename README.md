@@ -1,36 +1,49 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Micro-Landlord OS Lite
 
-## Getting Started
+Minimalista, mobil-első marketing oldal, modern, exkluzív kinézettel (Royal Indigo paletta)
 
-First, run the development server:
+## Futattás
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+Első lépésként telepítsd a függőségeket:
+
+```
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Fejlesztői szerver indítása:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Build (statikus/Web szerver):
 
-## Learn More
+```
+npm run build && npm start
+```
 
-To learn more about Next.js, take a look at the following resources:
+Kód formázása:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+npm run format
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Lintelés:
 
-## Deploy on Vercel
+```
+npm run lint
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Témacsere/Paletta frissítés
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+A teljes színvilág (világos és sötét mód) a `/styles/theme.css` fájlban található. Paletta cseréhez csak ebben a fájlban szükséges a HEX kódokat módosítani.
+
+## Technikai információk
+
+- Modern Next.js 14, TypeScript, TailwindCSS, nincs háttérkód vagy adatbázis
+- Nincsenek alternatív csomagkezelők (csak npm-hez optimalizált)
+- Minden oldal magyarul elérhető
+
+---
+
+© Micro-Landlord OS Lite – Minden jog fenntartva.

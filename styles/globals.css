@@ -1,0 +1,49 @@
+@import './theme.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Accessibility: enhanced focus & contrast */
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
+  transition: outline 0.15s;
+}
+button:focus-visible, a:focus-visible, [tabindex]:focus-visible {
+  box-shadow: 0 0 0 3px var(--color-accent), 0 1px 2px 0 rgba(0,0,0,0.08);
+  outline: none;
+}
+
+.container {
+  @apply mx-auto max-w-screen-lg px-4 sm:px-6 lg:px-8;
+}
+.section {
+  @apply py-12 md:py-20;
+}
+
+.skip-to-content {
+  position: absolute;
+  top: 0; left: 0;
+  background: var(--color-surface);
+  color: var(--color-primary-contrast);
+  padding: 1rem;
+  z-index: 50;
+  border-radius: 0 0 0.5em 0.5em;
+  box-shadow: 0 4px 24px 0 var(--color-bg);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  transform: translateY(-120%);
+  transition: transform 0.2s;
+}
+.skip-to-content:focus {
+  transform: translateY(0);
+}
+
+button, a {
+  transition: color 0.15s, background 0.15s, box-shadow 0.15s;
+}
+button:active, button:focus-visible, button:hover,
+a:active, a:focus-visible, a:hover {
+  filter: brightness(1.08) saturate(1.2);
+}
